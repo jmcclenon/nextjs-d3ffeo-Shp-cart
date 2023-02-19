@@ -1,20 +1,32 @@
 {
-  "name": "next-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "shopping-cart-app",
+  "version": "1.0.0",
+  "description": "A simple shopping cart app built with Next.js",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint . --ext .js",
+    "test": "jest"
   },
+  "author": "JMARS Design",
+  "license": "MIT",
   "dependencies": {
-    "next": "^10.2.3",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "@stripe/stripe-js": "^1.18.0",
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.1.1",
+    "next": "^11.0.1",
+    "next-auth": "^4.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^3.0.5"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.4",
-    "tailwindcss": "^2.1.4"
+    "babel-jest": "^27.4.0",
+    "eslint": "^8.9.0",
+    "eslint-config-next": "^11.0.1",
+    "jest": "^27.4.1",
+    "identity-obj-proxy": "^3.0.0"
   }
 }

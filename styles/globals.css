@@ -1,14 +1,15 @@
-/* ./styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
-  padding: 0;
+  height: 100%;
+}
+
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -16,6 +17,77 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 0.25rem;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1c5fc4;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.alert-primary {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+.alert-secondary {
+  background-color: #f0f1f3;
+  color: #374151;
+}
+
+.alert-success {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.alert-danger {
+  background-color: #fde8e8;
+  color: #c53030;
+}
+
+.alert-warning {
+  background-color: #fef3c7;
+  color: #9f580a;
 }
